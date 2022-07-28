@@ -1,0 +1,80 @@
+{
+	"info": {
+		"_postman_id": "d7dc2548-ebb5-4d66-be7a-2fa7748a82ba",
+		"name": "GitHubDemo",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "New Request",
+			"event": [
+				{
+					"listen": "prerequest",
+					"script": {
+						"id": "b865aa7f-a679-4dfa-88df-fd1ff9b03e4a",
+						"exec": [
+							"\"Body True\""
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"_postman_id": "08d6d617-8c4a-423b-8e9e-4c46a9a5de68",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": {
+						"password": "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",
+						"username": "NachevTsvetomir"
+					}
+				},
+				"method": "PATCH",
+				"header": [],
+				"url": "https://api.github.com/repos/NachevTsvetomir/Postman-Test/issues/1"
+			},
+			"response": []
+		},
+		{
+			"name": "New Request Copy",
+			"event": [
+				{
+					"listen": "prerequest",
+					"script": {
+						"id": "b865aa7f-a679-4dfa-88df-fd1ff9b03e4a",
+						"exec": [
+							""
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"_postman_id": "9c57a52c-a761-44f4-9d7a-f2edd34128b7",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": {
+						"password": " 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",
+						"username": "NachevTsvetomir"
+					}
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{title: 'Found a bug'}",
+					"options": {
+						"raw": {}
+					}
+				},
+				"url": "https://api.github.com/repos/NachevTsvetomir/Postman-Test/issues/"
+			},
+			"response": []
+		}
+	]
+}
